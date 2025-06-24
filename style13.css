@@ -96,6 +96,7 @@ body.dark .tokyo_tm_modalbox .main_details .detailbox span:last-child{color:#767
 .details a:hover{color:#fff;text-decoration:none}
 /* 404 Sayfası Stilleri */
 .page-404-body { color: #fff; margin: 0; font: normal 14px/20px Arial, Helvetica, sans-serif; height: 100%; background-color: #131516; }
+.page-404-body h1,.page-404-body h2 { color: #fff; }
 .page-404-main-container { height: auto; min-height: 100%; }
 .page-404-content-box { text-align: center; width: 800px; margin-left: -400px; position: absolute; top: 30%; left: 50%; }
 .page-404-title { margin: 0; font-size: 150px; line-height: 150px; font-weight: 700; }
@@ -104,16 +105,26 @@ body.dark .tokyo_tm_modalbox .main_details .detailbox span:last-child{color:#767
 
 /* Beyaz Geceler Sayfası Özel Stilleri */
 .film-details-spacing { margin-top: 20px; }
+.film-achievements { margin-top: 30px; padding-top: 20px; border-top: 1px solid #444; clear: both; }
 .film-achievements-title { margin-bottom: 20px; font-size: 1.8em; color: #eee; }
-.achievement-item-award { border-left: 3px solid #ffc107; background-color: rgba(255, 193, 7, 0.05); }
-.achievement-item-selection { border-left: 3px solid #5cb85c; background-color: rgba(92, 184, 92, 0.05); }
-.achievement-item__title { margin-top: 0; margin-bottom: 8px; font-size: 1.2em; color: #eee; }
-.achievement-item__location { font-size: 0.95em; color: #ccc; margin-bottom: 5px; }
-.achievement-item__status { font-size: 1em; margin-bottom: 0; }
-.achievement-item__status--award { color: #ffc107; }
-.achievement-item__status--selection { color: #5cb85c; }
 
-/* --- SVG İLE İLGİLİ TÜM STİLLER --- */ 
+/* Tüm başarı blokları için ortak stiller */
+.achievement-item { margin-bottom: 25px; padding: 15px; }
+.achievement-item-location { font-size: 0.95em; color: #ccc; margin-bottom: 5px; }
+.achievement-item-title { margin-top: 0; margin-bottom: 8px; font-size: 1.2em; }
+.achievement-item-status { font-size: 1em; margin-bottom: 0; font-weight: bold; }
+
+/* Ödül bloğu için SARI stiller */
+.achievement-item-award { border-left: 3px solid #ffc107; background-color: rgba(255, 193, 7, 0.05); }
+.achievement-item-award .achievement-item-title { color: #ffc107; }
+.achievement-item-award .achievement-item-status { color: #ffc107; }
+
+/* Seçki bloğu için YEŞİL stiller */
+.achievement-item-selection { border-left: 3px solid #5cb85c; background-color: rgba(92, 184, 92, 0.05); }
+.achievement-item-selection .achievement-item-title { color: #eee; }
+.achievement-item-selection .achievement-item-status { color: #5cb85c; }
+
+/* --- SVG İLE İLGİLİ TÜM STİLLER --- */
 svg { fill:currentcolor; width: 15px; height: 15px; }
 img.svg { width: 15px; height: 15px; }
 
