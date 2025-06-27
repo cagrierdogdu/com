@@ -24,7 +24,7 @@ html{overflow-x:hidden;padding:0;margin:0}body{font-family:mulish;font-size:15px
 .tokyo_tm_mobile_menu{position:fixed;top:0;left:0;right:0;z-index:10;background-color:#000;display:block}.tokyo_tm_mobile_menu .menu_inner{width:100%;height:auto;clear:both;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding:20px 40px}.tokyo_tm_mobile_menu .logo{font-size:13px;font-weight:500;color:#fff;text-transform:uppercase;font-family:mulish;text-decoration:none}.tokyo_tm_mobile_menu .menu ul{margin:0;list-style-type:none}.tokyo_tm_mobile_menu .menu ul li{margin:0 10px 0 0;display:inline-block}.tokyo_tm_mobile_menu .menu ul li:last-child{margin-right:0}.tokyo_tm_mobile_menu .menu ul li a{text-decoration:none;color:#fff}
 .tokyo_tm_all_wrap .rightpart{width:100%;min-height:100vh;float:left;position:relative;background-color:#f8f8f8;padding-left:0}
 .tokyo_tm_all_wrap .rightpart_in{position:relative;width:100%;float:left;clear:both;;min-height:100vh}
-.tokyo_tm_home{width:100%;margin:100px 0 30px;padding-bottom:20px;border-bottom:1px solid #333;clear:both;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;position:relative}.tokyo_tm_home .home_content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:flex-start}.tokyo_tm_home .avatar{min-width:300px;min-height:300px;position:relative;border-radius:100%}.tokyo_tm_home .avatar.poster{min-height:430px;}.tokyo_tm_home .avatar .image{position:absolute;top:0;bottom:0;left:0;right:0;background-repeat:no-repeat;background-position:center;background-size:cover;-webkit-animation:morph 8s ease-in-out infinite 1s;animation:morph 8s ease-in-out infinite 1s;background-blend-mode:multiply;-webkit-box-shadow:inset 0 0 0 9px rgba(255,255,255,.3);box-shadow:inset 0 0 0 9px rgba(255,255,255,.3)}@-webkit-keyframes morph{0%{border-radius:60% 40% 30% 70%/60% 30% 70% 40%}50%{border-radius:30% 60% 70% 40%/50% 60% 30% 60%}100%{border-radius:60% 40% 30% 70%/60% 30% 70% 40%}}@keyframes morph{0%{border-radius:60% 40% 30% 70%/60% 30% 70% 40%}50%{border-radius:30% 60% 70% 40%/50% 60% 30% 60%}100%{border-radius:60% 40% 30% 70%/60% 30% 70% 40%}}.tokyo_tm_home .details{margin-left:70px}.tokyo_tm_home .details .name{font-family:zeyada;font-size:70px;line-height:60px;margin-bottom:10px}.tokyo_tm_home .details .job{font-family:mulish;font-style:italic;font-weight:600;margin-bottom:30px}.tokyo_tm_home .social{width:100%;text-align:center;margin-top:25px}.tokyo_tm_home .social ul{margin:0;list-style-type:none}.tokyo_tm_home .social ul li{margin:0 12px 0 0;display:inline-block;color:#fff}.tokyo_tm_home .social ul li:last-child{margin-right:0}.tokyo_tm_home .social ul li a:hover{color:#fff}
+.tokyo_tm_home{width:100%;margin:100px 0 30px;padding-bottom:20px;border-bottom:1px solid #333;clear:both;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;position:relative}.tokyo_tm_home .home_content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.tokyo_tm_home .avatar{min-width:300px;min-height:300px;position:relative;border-radius:100%}.tokyo_tm_home .avatar.poster{min-height:430px;}.tokyo_tm_home .avatar .image{position:absolute;top:0;bottom:0;left:0;right:0;background-repeat:no-repeat;background-position:center;background-size:cover;-webkit-animation:morph 8s ease-in-out infinite 1s;animation:morph 8s ease-in-out infinite 1s;background-blend-mode:multiply;-webkit-box-shadow:inset 0 0 0 9px rgba(255,255,255,.3);box-shadow:inset 0 0 0 9px rgba(255,255,255,.3)}@-webkit-keyframes morph{0%{border-radius:60% 40% 30% 70%/60% 30% 70% 40%}50%{border-radius:30% 60% 70% 40%/50% 60% 30% 60%}100%{border-radius:60% 40% 30% 70%/60% 30% 70% 40%}}@keyframes morph{0%{border-radius:60% 40% 30% 70%/60% 30% 70% 40%}50%{border-radius:30% 60% 70% 40%/50% 60% 30% 60%}100%{border-radius:60% 40% 30% 70%/60% 30% 70% 40%}}.tokyo_tm_home .details{margin-left:70px}.tokyo_tm_home .details .name{font-family:zeyada;font-size:70px;line-height:60px;margin-bottom:10px}.tokyo_tm_home .details .job{font-family:mulish;font-style:italic;font-weight:600;margin-bottom:30px}.tokyo_tm_home .social{width:100%;text-align:center;margin-top:25px}.tokyo_tm_home .social ul{margin:0;list-style-type:none}.tokyo_tm_home .social ul li{margin:0 12px 0 0;display:inline-block;color:#fff}.tokyo_tm_home .social ul li:last-child{margin-right:0}.tokyo_tm_home .social ul li a:hover{color:#fff}
 .tokyo_tm_portfolio .portfolio_filter ul{margin:0;list-style-type:none}.tokyo_tm_portfolio .portfolio_filter ul li{margin:0 25px 0 0;display:inline-block}.tokyo_tm_portfolio .portfolio_filter ul li:last-child{margin-right:0}.tokyo_tm_portfolio .portfolio_filter ul li a{text-decoration:none;color:#767676;display:inline-block;font-weight:500;font-family:mulish;-webkit-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease}.tokyo_tm_portfolio .portfolio_filter ul li a.current{color:#000;letter-spacing:2px}.tokyo_tm_portfolio .portfolio_filter ul li a:hover{color:#000;letter-spacing:2px}
 .tokyo_tm_portfolio .list_wrapper{width:100%;height:auto;clear:both;float:left}
 .tokyo_tm_portfolio{width:100%;height:auto;clear:both;float:left;padding:0 0 40px}
@@ -105,26 +105,16 @@ body.dark .tokyo_tm_modalbox .main_details .detailbox span:last-child{color:#767
 
 /* Beyaz Geceler Sayfası Özel Stilleri */
 .film-details-spacing { margin-top: 20px; }
-.film-achievements { margin-top: 30px; padding-top: 20px; border-top: 1px solid #444; clear: both; }
 .film-achievements-title { margin-bottom: 20px; font-size: 1.8em; color: #eee; }
-
-/* Tüm başarı blokları için ortak stiller */
-.achievement-item { margin-bottom: 25px; padding: 15px; }
-.achievement-item-location { font-size: 0.95em; color: #ccc; margin-bottom: 5px; }
-.achievement-item-title { margin-top: 0; margin-bottom: 8px; font-size: 1.2em; }
-.achievement-item-status { font-size: 1em; margin-bottom: 0; font-weight: bold; }
-
-/* Ödül bloğu için SARI stiller */
 .achievement-item-award { border-left: 3px solid #ffc107; background-color: rgba(255, 193, 7, 0.05); }
-.achievement-item-award .achievement-item-title { color: #ffc107; }
-.achievement-item-award .achievement-item-status { color: #ffc107; }
-
-/* Seçki bloğu için YEŞİL stiller */
 .achievement-item-selection { border-left: 3px solid #5cb85c; background-color: rgba(92, 184, 92, 0.05); }
-.achievement-item-selection .achievement-item-title { color: #eee; }
-.achievement-item-selection .achievement-item-status { color: #5cb85c; }
+.achievement-item__title { margin-top: 0; margin-bottom: 8px; font-size: 1.2em; color: #eee; }
+.achievement-item__location { font-size: 0.95em; color: #ccc; margin-bottom: 5px; }
+.achievement-item__status { font-size: 1em; margin-bottom: 0; }
+.achievement-item__status--award { color: #ffc107; }
+.achievement-item__status--selection { color: #5cb85c; }
 
-/* --- SVG İLE İLGİLİ TÜM STİLLER --- */
+/* --- SVG İLE İLGİLİ TÜM STİLLER --- */ 
 svg { fill:currentcolor; width: 15px; height: 15px; }
 img.svg { width: 15px; height: 15px; }
 
@@ -138,3 +128,32 @@ img.svg { width: 15px; height: 15px; }
 .social-icons .svg.youtube { width: 24px; height: 24px; }
 
 body.dark .svg path{ fill: #000000; }
+
+/*navigation menu*/
+.tokyo_tm_mobile_menu { display: none; }
+.tokyo_tm_desktop_menu { position: fixed; top: 0; left: 0; right: 0; z-index: 10; background-color: #000; padding: 0 40px; }
+.tokyo_tm_desktop_menu .menu_inner { width: 100%; display: flex; align-items: center; justify-content: space-between; height: 80px; }
+.tokyo_tm_desktop_menu .logo { font-size: 16px; font-weight: 700; color: #fff; text-decoration: none; }
+.tokyo_tm_desktop_menu .menu ul { margin: 0; list-style-type: none; }
+.tokyo_tm_desktop_menu .menu li { display: inline-block; margin: 0 15px; }
+.tokyo_tm_desktop_menu .menu li a { text-decoration: none; color: #bbb; font-weight: 500; transition: color 0.3s ease; }
+.tokyo_tm_desktop_menu .menu li a:hover { color: #fff; }
+.tokyo_tm_mobile_nav_wrap { visibility: hidden; }
+@media (max-width: 1040px) {
+.tokyo_tm_desktop_menu { display: none; }
+.tokyo_tm_mobile_menu { display: block; position: fixed; top: 0; left: 0; right: 0; z-index: 12; background-color: #000; height: 70px; }
+.tokyo_tm_mobile_menu .menu_inner { display: flex; align-items: center; justify-content: space-between; padding: 0 20px; height: 100%; }
+.tokyo_tm_mobile_menu .logo { font-size: 14px; font-weight: 700; color: #fff; text-decoration: none; }
+.hamburger { cursor: pointer; padding: 15px; display: flex; flex-direction: column; justify-content: space-around; width: 40px; height: 40px; box-sizing: border-box; }
+.hamburger-line { width: 100%; height: 2px; background-color: #fff; transition: all 0.3s ease; }
+.hamburger.is-active .hamburger-line:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.is-active .hamburger-line:nth-child(2) { opacity: 0; }
+.hamburger.is-active .hamburger-line:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.tokyo_tm_mobile_nav_wrap { position: fixed; top: 70px; left: 0; width: 100%; height: calc(100vh - 70px); background-color: rgba(0, 0, 0, 0.98); z-index: 11; opacity: 0; visibility: hidden; transform: translateY(-20px); transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; }
+.tokyo_tm_mobile_nav_wrap.is-active { opacity: 1; visibility: visible; transform: translateY(0); }
+.tokyo_tm_mobile_nav_wrap .nav_inner { display: flex; justify-content: center; align-items: center; height: 100%; }
+.tokyo_tm_mobile_nav_wrap .main-nav-mobile { list-style-type: none; padding: 0; text-align: center; }
+.tokyo_tm_mobile_nav_wrap .main-nav-mobile li { margin: 15px 0; }
+.tokyo_tm_mobile_nav_wrap .main-nav-mobile a { color: #fff; text-decoration: none; font-size: 24px; font-weight: 500; padding: 10px; }
+body.mobile-menu-open { overflow: hidden; }
+}
