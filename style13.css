@@ -65,7 +65,7 @@ html{overflow-x:hidden;padding:0;margin:0}body{font-family:mulish;font-size:15px
 @media(max-width:768px){.tokyo_tm_home .details .name{font-size:55px}.tokyo_tm_home .avatar{min-width:200px;min-height:200px}.tokyo_tm_portfolio .portfolio_list{margin:0}.tokyo_tm_portfolio .portfolio_list li{width:100%;padding-left:0}.tokyo_tm_modalbox .box_inner{width:300px}.tokyo_tm_modalbox .description_wrap{padding:20px}}
 
 /*dark*/
-body.dark{background-color:#000;color:#bbb}body.dark h1,body.dark h2,body.dark h3,body.dark h4,body.dark h5,body.dark h6{color:#fff}
+body.dark{background-color:#111;color:#bbb}body.dark h1,body.dark h2,body.dark h3,body.dark h4,body.dark h5,body.dark h6{color:#fff}
 .copyright p{clear:both;text-align: center;margin-bottom:20px;font-style:italic;}body.dark .tokyo_tm_all_wrap .rightpart{background-color:#111}
 body.dark .cursor-inner{margin-left:-3px;margin-top:-3px;width:6px;height:6px;z-index:50;background-color:#fff;-webkit-transition:width .3s ease-in-out,height .3s ease-in-out,margin .3s ease-in-out,opacity .3s ease-in-out;-o-transition:width .3s ease-in-out,height .3s ease-in-out,margin .3s ease-in-out,opacity .3s ease-in-out;transition:width .3s ease-in-out,height .3s ease-in-out,margin .3s ease-in-out,opacity .3s ease-in-out}
 body.dark .cursor-inner.cursor-hover{margin-left:-40px;margin-top:-40px;width:80px;height:80px;background-color:#fff;opacity:.3}
@@ -130,21 +130,24 @@ img.svg { width: 15px; height: 15px; }
 body.dark .svg path{ fill: #000000; }
 
 /*navigation menu*/
+.tokyo_tm_home {margin-top: 0;padding-top: 120px;}
 .tokyo_tm_mobile_menu { display: none; }
 .tokyo_tm_desktop_menu { position: fixed; top: 0; left: 0; right: 0; z-index: 10; background-color: #000; padding: 0 40px; }
-.tokyo_tm_desktop_menu .menu_inner { width: 100%; display: flex; align-items: center; justify-content: space-between; height: 80px; }
+.tokyo_tm_desktop_menu .menu_inner { width: 100%; max-width: 960px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 80px; padding: 0 40px; box-sizing: border-box; }
 .tokyo_tm_desktop_menu .logo { font-size: 16px; font-weight: 700; color: #fff; text-decoration: none; }
 .tokyo_tm_desktop_menu .menu ul { margin: 0; list-style-type: none; }
 .tokyo_tm_desktop_menu .menu li { display: inline-block; margin: 0 15px; }
-.tokyo_tm_desktop_menu .menu li a { text-decoration: none; color: #bbb; font-weight: 500; transition: color 0.3s ease; }
+.tokyo_tm_desktop_menu .menu li a { font-size:16px; text-decoration: none; color: #bbb; font-weight: 500; transition: color 0.3s ease; }
 .tokyo_tm_desktop_menu .menu li a:hover { color: #fff; }
-.tokyo_tm_mobile_nav_wrap { visibility: hidden; }
+.tokyo_tm_mobile_nav_wrap { position: fixed; top: 70px; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.98); z-index: 11; opacity: 0; visibility: hidden; transform: translateY(-20px); transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; }
+.tokyo_tm_mobile_nav_wrap .main-nav-mobile { margin: 0; padding: 0; list-style-type: none; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 @media (max-width: 1040px) {
+.tokyo_tm_home {padding-top: 100px;}
 .tokyo_tm_desktop_menu { display: none; }
 .tokyo_tm_mobile_menu { display: block; position: fixed; top: 0; left: 0; right: 0; z-index: 12; background-color: #000; height: 70px; }
 .tokyo_tm_mobile_menu .menu_inner { display: flex; align-items: center; justify-content: space-between; padding: 0 20px; height: 100%; }
 .tokyo_tm_mobile_menu .logo { font-size: 14px; font-weight: 700; color: #fff; text-decoration: none; }
-.hamburger { cursor: pointer; padding: 15px; display: flex; flex-direction: column; justify-content: space-around; width: 40px; height: 40px; box-sizing: border-box; }
+.hamburger { cursor: pointer; padding: 15px; display: flex; flex-direction: column; justify-content: space-around; width: 50px; height: 50px; box-sizing: border-box; }
 .hamburger-line { width: 100%; height: 2px; background-color: #fff; transition: all 0.3s ease; }
 .hamburger.is-active .hamburger-line:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .hamburger.is-active .hamburger-line:nth-child(2) { opacity: 0; }
@@ -157,3 +160,59 @@ body.dark .svg path{ fill: #000000; }
 .tokyo_tm_mobile_nav_wrap .main-nav-mobile a { color: #fff; text-decoration: none; font-size: 24px; font-weight: 500; padding: 10px; }
 body.mobile-menu-open { overflow: hidden; }
 }
+
+/*breadcrumbs*/
+/* Breadcrumb'ın menü altında doğru konumlanması için */
+.breadcrumbs { padding-top: 100px; padding-bottom: 20px; font-size: 14px; }
+.page-detail .breadcrumbs { padding-bottom: 40px; }
+.breadcrumbs ol { margin: 0; padding: 0; list-style: none; }
+.breadcrumbs li { display: inline; }
+.breadcrumbs li:not(:last-child)::after { content: " > "; margin: 0 8px; color: #bbb; }
+.breadcrumbs a { color: #bbb; text-decoration: none; }
+.breadcrumbs a:hover { color: #fff; }
+.breadcrumbs .active { color: #fff; font-weight: bold; }
+
+/* Breadcrumb'lı veya diğer iç sayfalar için varsayılan olarak üst boşluğu sıfırla */
+.tokyo_tm_home { margin-top: 0 !important; padding-top: 0 !important; }
+
+/* SADECE ANA SAYFA (body class'ı .page-home olan) için üst boşluğu tekrar ekle */
+body.page-home .tokyo_tm_home { padding-top: 120px !important; }
+
+/* Mobil için SADECE ANA SAYFA boşluğunu ayarla */
+@media (max-width: 1040px) { body.page-home .tokyo_tm_home { padding-top: 100px !important; } }
+
+/*sayfalar*/
+/* === YENİ SAYFALAR İÇİN GENEL STİLLER === */
+.tokyo_tm_page_content_wrap { padding-top: 0; padding-bottom: 60px; }
+.tokyo_tm_page_content_wrap .tokyo_tm_title { margin-bottom: 60px; text-align: center; }
+.tokyo_tm_page_content_wrap .tokyo_tm_title span { margin-bottom: 10px; display: inline-block; }
+.tokyo_tm_page_content_wrap .tokyo_tm_title h3 { font-size: 32px; }
+@media (max-width: 1040px) { .tokyo_tm_page_content_wrap { padding-top: 100px; } }
+
+/* === 1. HAKKIMDA SAYFASI STİLLERİ === */
+.tokyo_tm_about .about_text p { margin-bottom: 15px; line-height: 1.6; }
+.tokyo_tm_about .about_text hr { border: none; height: 1px; background-color: #333; margin: 30px 0; }
+
+/* === 2. FİLMOGRAFİ SAYFASI STİLLERİ === */
+.tokyo_tm_filmography_category { margin-bottom: 80px; }
+.tokyo_tm_filmography_category .tokyo_tm_title { text-align: left; margin-bottom: 40px; }
+.filmography_list { margin: 0 -10px; padding: 0; list-style-type: none; display: flex; flex-wrap: wrap; }
+.filmography_list li { width: 33.333%; padding: 0 10px; margin-bottom: 20px; box-sizing: border-box; }
+.filmography_list li a { display: block; text-decoration: none; color: #fff; overflow: hidden; border-radius: 5px; position: relative; }
+.filmography_list li img { width: 100%; display: block; transition: transform 0.3s ease; }
+.filmography_list li a:hover img { transform: scale(1.1); }
+.filmography_list li .title { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding: 30px 15px 15px; font-size: 16px; font-weight: bold; }
+@media (max-width: 768px) { .filmography_list li { width: 50%; } }
+@media (max-width: 480px) { .filmography_list li { width: 100%; } }
+
+/* === 3. BASIN SAYFASI STİLLERİ === */
+.press_item { margin-bottom: 40px; padding-bottom: 30px; border-bottom: 1px solid #333; }
+.press_item:last-child { border-bottom: none; margin-bottom: 0; }
+.press_item .press_meta { font-size: 14px; color: #bbb; margin-bottom: 10px; }
+.press_item .press_title { font-size: 24px; margin: 0 0 15px 0; }
+.press_item .press_title a { color: #fff; text-decoration: none; }
+.press_item .press_title a:hover { text-decoration: underline; }
+.press_item .press_quote { margin: 0; padding-left: 20px; border-left: 3px solid #bbb; font-style: italic; color: #ccc; }
+
+body.page-detail .tokyo_tm_home { align-items: flex-start !important; }
+body.page-detail .home_content { align-items: flex-start !important; }
