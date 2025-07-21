@@ -121,9 +121,9 @@ body.dark .tokyo_tm_modalbox .main_details .detailbox span:last-child{color:#767
 .achievement-item-status.achievement-item-status-selection{color:#5cb85c;}
 
 /* --- SVG İLE İLGİLİ TÜM STİLLER --- */
-body.dark .svg path,body.dark .svg g,body.dark .svg rect,body.dark .svg circle{fill:#ffffff !important;}
 svg{fill:currentcolor;width:15px;height:15px;}
 img.svg{width:15px;height:15px;}
+.svg g,.svg rect,.svg circle{fill:#000000 !important;}
 
 /* 1. Tüm ikon listeleri için ortak temel stil */
 .social-icons{margin:0;list-style-type:none;}
@@ -132,6 +132,8 @@ img.svg{width:15px;height:15px;}
 .social-icons li a{text-decoration:none;color:#e8e6e3;-webkit-filter:invert(100%);filter:invert(100%);}
 .social-icons .svg{width:20px;height:20px;}
 .social-icons .svg.imdb{width:40px;}
+.social-icons .mubi{width:63px;margin-bottom:4px !important;}
+.social-icons .mubi .svg{width:66px;}
 .social-icons .svg.youtube{width:24px;height:24px;}
 
 body.dark .svg path{fill:#000000;}
